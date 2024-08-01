@@ -29,6 +29,8 @@ const TAB_DATA = [
         <li>Firebase</li>
         <li>PHP</li>
         <li>NodeJS</li>
+        <li>Flask</li>
+        <li>ExpressJS</li>
       </ul>
     ),
   },
@@ -58,13 +60,13 @@ const TAB_DATA = [
     id: "technologies",
     content: (
       <ul className="list-disc pl-2">
-        <li>Microsoft Word</li>
-        <li>Microsoft Excel</li>
-        <li>Microsoft Access</li>
-        <li>Microsoft Powerpoint</li>
-        <li>Google Docs</li>
-        <li>Google Sheets</li>
-        <li>Google Slides</li>
+        <li>AWS S3</li>
+        <li>AWS EC2</li>
+        <li>Docker</li>
+        <li>GIT</li>
+        <li>TravisCI</li>
+        <li>Restful API's</li>
+        <li>Selenium</li>
       </ul>
     ),
   },
@@ -98,7 +100,7 @@ const AboutSection = () => {
   return (
     <section className="text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-      <Image src="" width={500} height={500} alt="My picture" />
+      <Image src="https://raw.githubusercontent.com/tarik588/Tarik_Portforlio_Website/tarik/my_picture.jpeg" width={500} height={500} alt="My picture" />
 
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>

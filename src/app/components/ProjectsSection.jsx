@@ -7,10 +7,10 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "LPG eCommerce Customer/Retailer Website & Application",
-    description: "JE Moral LPG Application for customer and retailer interface with live location tracking for delivery and order management.",
+    title: "Facial ID and Gesture Web Authentication",
+    description: "Employed OpenCV’s facial recognition algorithms in conjunction with the face recognition module in Python to detect and identify faces within the captured video frames",
     image: "https://raw.githubusercontent.com/mrHeinrichh/Portfolio-cdn/main/image/projects/project-1.jpg",
-    tag: ["All", "Mobile",  "Web"],
+    tag: ["All", "AI",  "Web"],
     gitUrl: "https://github.com/mrHeinrichh?tab=repositories",
     previewUrl: "https://mrheinrichh.github.io/web-mobile-download-interface/",
   },
@@ -697,19 +697,8 @@ const ProjectsSection = () => {
         />
           <ProjectTag
           onClick={handleTagChange}
-          name="Video Contents"
-          isSelected={tag === "Video Contents"}
-        />
-          <ProjectTag
-          onClick={handleTagChange}
-          name="Graphic Designs"
-          isSelected={tag === "Graphic Designs"}
-        />
-            <ProjectTag
-          onClick={handleTagChange}
-          name="Photography / Videography"
-        
-          link="https://www.facebook.com/mrHeinrichhh"
+          name="AI"
+          isSelected={tag === "AI"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
