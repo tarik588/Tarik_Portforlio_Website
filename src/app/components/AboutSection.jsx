@@ -11,13 +11,11 @@ const TAB_DATA = [
       <ul className="list-disc pl-2">
         <li>HTML</li>
         <li>CSS</li>
-        <li>Tailwind</li>
+        <li>MaterialUI</li>
         <li>Bootstrap</li>
         <li>JavaScript</li>
         <li>ReactJS</li>
         <li>NextJS</li>
-        <li>Flutter</li>
-        <li>React Native</li>
       </ul>
     ),
   },
@@ -26,12 +24,11 @@ const TAB_DATA = [
     id: "backend",
     content: (
       <ul className="list-disc pl-2">
+        <li>Springboot</li>
+        <li>Python</li>
         <li>Firebase</li>
         <li>PHP</li>
-        <li>Laravel</li>
-        <li>Nodejs</li>
-        <li>C#</li>
-        <li>Python</li>
+        <li>NodeJS</li>
       </ul>
     ),
   },
@@ -40,12 +37,7 @@ const TAB_DATA = [
     id: "apimanagement",
     content: (
       <ul className="list-disc pl-2">
-        <li>SwaggerJS</li>
         <li>Postman</li>
-        <li>Insomia</li>
-        <li>Paw</li>
-        <li>Restlet Studio</li>
-        <li>SoapUI</li>
       </ul>
     ),
   },
@@ -55,27 +47,24 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>MySQL</li>
-        <li>Sqlite</li>
+        <li>SQLite</li>
+        <li>PosgreSQL</li>
         <li>MongoDB</li>
       </ul>
     ),
   },
   {
-    title: "Editing",
-    id: "editing",
+    title: "Technologies",
+    id: "technologies",
     content: (
       <ul className="list-disc pl-2">
-        <li>Adobe Photoshop</li>
-        <li>Adobe Premiere Pro</li>
-        <li>Adobe After Effects</li>
-        <li>Adobe Lightroom</li>
-        <li>Adobe Illustrator</li>
-        <li>Adobe XD</li>
-        <li>Figma</li>
-        <li>Adobe Audition</li>
-        <li>Final Cut Pro</li>
-        <li>DaVinci Resolve</li>
-        <li>Canva</li>
+        <li>Microsoft Word</li>
+        <li>Microsoft Excel</li>
+        <li>Microsoft Access</li>
+        <li>Microsoft Powerpoint</li>
+        <li>Google Docs</li>
+        <li>Google Sheets</li>
+        <li>Google Slides</li>
       </ul>
     ),
   },
@@ -109,15 +98,12 @@ const AboutSection = () => {
   return (
     <section className="text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-      <Image src="https://raw.githubusercontent.com/mrHeinrichh/Portfolio-cdn/main/image/me.jpg" width={500} height={500} alt="John Heinrich Fabros" />
+      <Image src="" width={500} height={500} alt="My picture" />
 
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-          Hi there! I&apos;m John Heinrich Fabros, a hybrid creative based in Taguig City. I bridge the gap between the artistic and technical worlds, working as both a Multimedia Artist and a Software Engineer.
-  On the artistic side, I bring stories and ideas to life through videography, video editing, photography, and graphic design. I also have experience managing social media content.
-  In my software engineering role, I leverage my technical skills in front-end and back-end development, along with database management, to build functional and engaging applications.
-  This unique blend of talents allows me to approach projects from a well-rounded perspective, infusing creativity with technical know-how.
+          Hi there! I&apos;m Tarik Amraoui, your local Full-Stack Software Engineer based in the New York Metro Area. Below are the technologies I'm proficient in!
 
           </p>
           <div className="flex flex-row justify-start mt-8">
@@ -140,7 +126,7 @@ const AboutSection = () => {
               active={tab === "apimanagement"}
             >
               {" "}
-              Api Management{" "}
+              API Management{" "}
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("database")}
@@ -150,11 +136,11 @@ const AboutSection = () => {
               Database{" "}
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("editing")}
-              active={tab === "editing"}
+              selectTab={() => handleTabChange("technologies")}
+              active={tab === "technologies"}
             >
               {" "}
-              Editing Tools{" "}
+              Technologies{" "}
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("administrative")}
